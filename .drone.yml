@@ -1,0 +1,10 @@
+workspace:
+  base: /opt
+  path: src
+
+pipeline:
+  build:
+    image: hungo/aws-cli-test
+    commands:
+      - cd /root/
+      - ./getBuild.sh
