@@ -12,6 +12,6 @@ pipeline:
       - export AWS_DEFAULT_REGION="$H_LOCATION"
       - cd /root/
       - ./getBuild.sh
-      - if [[ ${DRONE_TAG != "" ]]; then echo notempty; else exit 0
+      - if [[ "${DRONE_TAG}" != "" ]]; then echo notempty; else exit 0
       - echo "443"
       - echo "999"
